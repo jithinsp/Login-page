@@ -21,7 +21,7 @@
     <div class="login-container">
         <h1 class="text-center">Hi, welcome</h1>
         <form th:action="@{/login}" method="post"  class="mt-4">
-            <p th:if="@{error}" class="text-danger">User name or Password Incorrect</p>
+            <p th:if="${error}" class="text-danger">User name or Password Incorrect</p>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label" >User Name</label>
                 <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
